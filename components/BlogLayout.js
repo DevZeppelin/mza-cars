@@ -8,7 +8,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
 
           <div name="Titulo indice movil" className="md:hidden mb-2 block text-left mx-12">
             <h1 className=" text-base uppercase font-bold opacity-60 text-primary text-center">
-              Índice
+              Nuestros autos
             </h1>
 
             {blogs.results.map((article, index) => (
@@ -29,7 +29,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
           {blogs.results.map((article, index) => (
             <div className=" mb-4 md:mb-10" key={article.uid}>
               <Link href={`${tag}/${article.uid}`}>
-                <h1 className="bold uppercase text-xl md:text-2xl text-primary   cursor-pointer my-4">
+                <h1 className="bold uppercase text-xl md:text-2xl text-primary h-16 cursor-pointer my-auto">
                   {RichText.render(article.data["car_title"])}
                 </h1>
               </Link>
@@ -40,9 +40,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
                   src={article.data["car_image"].url}
                   alt="img"
                 />
-              </Link>
-              
-
+              </Link>     
               <h2 className="mt-2 mb-6 px-8">
                 {" "}
                 {RichText.render(article.data["car_description"])}
@@ -58,7 +56,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
           <h1
             className="text-xl uppercase font-bold text-primary mb-10 ml-24"
           >
-            Índice
+            Nuestros autos
           </h1>
           {blogs.results.map((article, index) => (
             <div key={article.uid}>

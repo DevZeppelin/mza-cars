@@ -11,7 +11,7 @@ export default function SlugLayout({ article }) {
   return (
     <div className="w-5/6 md:w-2/3 mx-auto">
       
-      <h1 className=" text-xl md:text-3xl text-center uppercase font-bold text-lowContrast py-12 md:py-16">
+      <h1 className=" text-xl md:text-3xl text-center uppercase font-bold text-primary py-12 md:py-16">
         {RichText.render(article.data["car_title"])}
       </h1>
       
