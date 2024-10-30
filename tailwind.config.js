@@ -13,8 +13,7 @@ module.exports = {
         primary: '#131842',
         secundary: '#E68369',
         lowContrast: '#ECCEAE',
-        background: '#FBF6E2',
-        backgroundSecundary: '#FBF6E2'
+        background: '#EAE4DD',
       },
       fontFamily: {
         body: ['Dosis']

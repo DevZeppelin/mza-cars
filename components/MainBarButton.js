@@ -4,7 +4,7 @@ const MainBarButton = ({ logo, text, description1, description2, classType }) =>
             {logo}
             <div className="my-auto">
               <p className={classType}><b>{text}</b></p>
-              <p>{description1}</p>
+              <p className="text-lowContrast">{description1}</p>
               <p>{description2}</p>
             </div>
           </div>

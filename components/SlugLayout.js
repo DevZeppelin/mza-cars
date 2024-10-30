@@ -18,7 +18,7 @@ export default function SlugLayout({ article }) {
       <img
         className="shadow-xl text-center mb-10 md:mb-15 mx-auto border-gray-800 border-2"
         src={article.data["car_image"].url}
-        alt="image"
+        alt="auto image car mza-cars"
       />
       <div className="text-base md:text-lg  space-y-8 md:space-y-8">
         {RichText.render(article.data["car_description"])}

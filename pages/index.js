@@ -4,19 +4,11 @@ import Layout from "../components/Layout";
 import Prismic from "prismic-javascript";
 import { Client } from "../prismic-configuration";
 import BlogLayout from "../components/BlogLayout";
-import { useState, useEffect } from 'react'
 
 
 export default function Blog({ blogs }) {
 
-  const [isClient, setIsClient] = useState(false)
-
-  useEffect(() => {
-    setIsClient(true)
-  }, [])
-
   console.log(blogs.data)
-  console.log(isClient ? 'This is never prerendered' : 'Prerendered')
 
 
   return (
@@ -31,7 +23,7 @@ export default function Blog({ blogs }) {
             <p className="w-full mx-auto mb-8 md:w-1/2 text-2xl md:text-4xl italic">
               Seleccionamos solo los mejores autos para ofrecer calidad y exclusividad en cada venta.
             </p>
-            <FaAngleDoubleDown className="mx-auto text-4xl my-24" />
+            <FaAngleDoubleDown className="mx-auto text-4xl my-12" />
           </span>
 
 

@@ -6,14 +6,15 @@ import WhatsappIcon from "./WhatsappIcon";
 export default function Layout({ children }) {
 
   return (
-    <div className="bg-lowContrast">
-      <TopLeyend/>
-      <MainTopScreen/>
-      <div className="bg-lowContrast text-textcolor">
+    <div className="bg-gradient-to-br from-background to-lowContrast">
+
+      <TopLeyend />
+      <MainTopScreen />
+      <div className="text-textcolor">
         {children}
       </div>
       <Footer />
-      <WhatsappIcon/>
+      <WhatsappIcon />
 
     </div>
   );
