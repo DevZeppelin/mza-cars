@@ -1,28 +1,32 @@
+/** @type {import('tailwindcss').Config} */
 module.exports = {
-    purge: false,
-    theme: {
-        screens: {
-            'md': '850px',
-        },
-        extend: {
-            colors : {
-                primary : '#131842',
-                secundary: '#E68369',
-                lowContrast: '#ECCEAE' ,
-                background: '#FBF6E2',
-                backgroundSecundary: '#FBF6E2'
-            },
-            fontFamily : {
-                body : ['Dosis']
-            }
-        },
+  content: [
+    "./pages/**/*.{js,ts,jsx,tsx}",
+    "./components/**/*.{js,ts,jsx,tsx}",
+  ],
+  theme: {
+    screens: {
+      'md': '850px',
     },
-    
-    variants: {
-       
-        borderColor: ["hover", "focus"],
-        borderStyle: ['hover', 'focus'], 
-          
+    extend: {
+      colors: {
+        primary: '#131842',
+        secundary: '#E68369',
+        lowContrast: '#ECCEAE',
+        background: '#FBF6E2',
+        backgroundSecundary: '#FBF6E2'
+      },
+      fontFamily: {
+        body: ['Dosis']
+      }
     },
-    plugins: []
+  },
+
+  variants: {
+
+    borderColor: ["hover", "focus"],
+    borderStyle: ['hover', 'focus'],
+
+  },
+  plugins: []
 }
