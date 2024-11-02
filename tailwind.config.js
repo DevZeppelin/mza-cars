@@ -10,10 +10,10 @@ module.exports = {
     },
     extend: {
       colors: {
-        primary: '#131842',
-        secundary: '#E68369',
-        lowContrast: '#ECCEAE',
-        background: '#EAE4DD',
+        primary: '#000',
+        liveColor: '#e1772d',
+        background: '#FFF',
+        secundary: '#CBDCEB',
       },
       fontFamily: {
         body: ['Dosis']
@@ -22,7 +22,6 @@ module.exports = {
   },
 
   variants: {
-
     borderColor: ["hover", "focus"],
     borderStyle: ['hover', 'focus'],
 

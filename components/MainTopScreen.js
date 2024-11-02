@@ -10,14 +10,14 @@ const MainTopScreen = () => {
             <Link href="/" >
                 <Image src="/logo.png" width={400} height={400} alt="mza-cars-logo" className="animate-logo"/>
             </Link>
-            <div className="hidden md:flex flex-col gap-4 my-auto text-lowContrast">
+            <div className="hidden md:flex flex-col gap-4 my-auto">
                 <MainBarButton
                     logo={
                         <FaWhatsapp className="text-5xl flex my-auto m-2" />
                     }
                     text="Whatsapp, SMS o llamadas"
                     description2="2615 75 5056"
-                    classType="text-navbar"
+                   
                 />
 
                 <MainBarButton
@@ -26,7 +26,8 @@ const MainTopScreen = () => {
                     }
                     text="Ubicación"
                     description2="Maza 51, Maipú, Mendoza"
-                    classType="text-navbar"
+                
+
                 />
             </div>
         </div>
