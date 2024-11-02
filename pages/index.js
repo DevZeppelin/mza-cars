@@ -1,15 +1,8 @@
 import Head from "next/head";
-import { FaAngleDoubleDown } from "react-icons/fa";
 import Layout from "../components/Layout";
-import Prismic from "prismic-javascript";
-import { Client } from "../prismic-configuration";
-import BlogLayout from "../components/BlogLayout";
+import CustomButton from "../components/CustomButton";
 
-
-export default function Blog({ blogs }) {
-
-  console.log(blogs.data)
-
+export default function Index({ blogs }) {
 
   return (
     <div>
@@ -20,28 +13,18 @@ export default function Blog({ blogs }) {
       <Layout>
         <div className="mt-16 mb-24 md:mb-48 text-center">
           <span className="my-auto">
-            <p className="w-full mx-auto mb-8 md:w-1/2 text-2xl md:text-4xl italic">
+            <p className="w-full mx-auto mb-8 md:w-1/2 text-2xl md:text-4xl italic px-8 md:px-0">
               Seleccionamos solo los mejores autos para ofrecer calidad y exclusividad en cada venta.
             </p>
-            <FaAngleDoubleDown className="mx-auto text-4xl my-12" />
+            <div className="flex flex-col md:flex-row justify-center gap-4 mt-0 md:mt-12 px-8">
+              <CustomButton text="Autos y camionetas" href="/autos"/>
+              <CustomButton text="Otros" href="/otros"/>
+            </div>
           </span>
 
 
         </div>
-        <BlogLayout tag="car" title="Autos en venta" blogs={blogs} />
       </Layout>
     </div>
   );
 }
-
-export async function getServerSideProps() {
-  const blogs = await Client().query(
-    Prismic.Predicates.at("document.tags", ["car"])
-  );
-  return {
-    props: {
-      blogs: blogs
-    },
-  };
-}
-

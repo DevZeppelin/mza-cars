@@ -1,13 +1,8 @@
 import { RichText } from "prismic-reactjs";
-import Link from "next/link";
-import { useRouter } from "next/router";
+import BackButton from "./BackButton";
 
 export default function SlugLayout({ article }) {
-  const router = useRouter();
-  //const date = article.data["blog-date"];
-
-  console.log(article.data);
-
+  
   return (
     <div className="w-5/6 md:w-2/3 mx-auto">
       
@@ -24,14 +19,7 @@ export default function SlugLayout({ article }) {
         {RichText.render(article.data["car_description"])}
       </div>
 
-      <div className="flex justify-center">
-        <button
-          className="bg-primary text-white py-3 px-10 my-4 text-lg uppercase rounded-md"
-          onClick={() => router.back()}
-        >
-          Volver 👈
-        </button>
-      </div>
+      <BackButton/>
     </div>
   );
 }
