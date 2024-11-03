@@ -26,11 +26,10 @@ export default function SlugLayout({ article }) {
         </h1>
         : ""}
 
-      <div className="grid grid-cols-2 gap-4">
+      <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
         {article.data["car_image_front"].url ? <CarPhoto src={article.data["car_image_front"].url} /> : ""}
         {article.data["car_image_back"].url ? <CarPhoto src={article.data["car_image_back"].url} /> : ""}
         {article.data["car_image_in"].url ? <CarPhoto src={article.data["car_image_in"].url} /> : ""}
-
       </div>
 
       <BackButton />
