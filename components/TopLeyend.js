@@ -2,7 +2,7 @@ import { FaMapSigns } from "react-icons/fa";
 
 const TopLeyend = () => {
   return (
-    <div className="flex md:hidden flex-row justify-end gap-1 py-2 text-primary bg-darkColor">
+    <div className="flex md:hidden flex-row justify-end gap-1 py-1 text-liveColor bg-darkColor">
         <p className="text-sm p-2 font-bold my-auto uppercase">
            Maipú, Mendoza
         </p>
