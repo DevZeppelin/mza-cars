@@ -12,7 +12,8 @@ module.exports = {
       colors: {
         primary: '#000',
         liveColor: '#FF0303',
-        darkColor: '#B20600',
+        darkColor: '#181C14',
+        // darkColor: '#B20600',
         background: '#FFF',
         secundary: '#CBDCEB',
       },
