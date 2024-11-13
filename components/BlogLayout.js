@@ -10,7 +10,7 @@ export default function BlogLayout({ tag, title, blogs, extra }) {
   return (
     <>
       <h1 className="text-4xl p-8 text-center">{title}</h1>
-      <div className="flex">
+      <div className="flex mx-auto justify-center">
         <div className="md:grid md:grid-cols-3 gap-6 md:w-2/3 ml-4 md:ml-24 mr-4 md:mr-20 text-center">
 
 
