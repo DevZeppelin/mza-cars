@@ -30,6 +30,8 @@ export default function SlugLayout({ article }) {
         {article.data["car_image_front"].url ? <CarPhoto src={article.data["car_image_front"].url} /> : ""}
         {article.data["car_image_back"].url ? <CarPhoto src={article.data["car_image_back"].url} /> : ""}
         {article.data["car_image_in"].url ? <CarPhoto src={article.data["car_image_in"].url} /> : ""}
+        {article.data["car_image_5"].url ? <CarPhoto src={article.data["car_image_5"].url} /> : ""}
+        {article.data["car_image_6"].url ? <CarPhoto src={article.data["car_image_6"].url} /> : ""}
       </div>
 
       <BackButton />
