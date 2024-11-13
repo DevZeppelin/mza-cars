@@ -6,9 +6,9 @@ import { FaMapMarkerAlt } from "react-icons/fa";
 
 const MainTopScreen = () => {
     return (
-        <div className="flex bg-gradient-to-b from-primary to-darkColor px-8 md:px-12 gap-4 justify-between">
+        <div className="flex bg-gradient-to-b from-primary to-darkColor px-8 md:px-12 gap-4 justify-center md:justify-between">
             <Link href="/" >
-                <Image src="/logo.png" width={400} height={400} alt="mza-cars-logo" className="animate-logo my-6 md:my-8   "/>
+                <Image src="/logo.png" width={400} height={400} alt="mza-cars-logo" className="animate-logo my-6 md:my-8  "/>
             </Link>
             <div className="hidden md:flex flex-col gap-4 my-auto">
                 <MainBarButton
